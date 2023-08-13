@@ -1,1 +1,1 @@
-# www.harisPTR.dev
+# https://harisptr.github.io/harisPTR/
