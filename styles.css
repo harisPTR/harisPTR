@@ -21,3 +21,8 @@ li a:hover {
 .active {
     background-color: #8015d1;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/texture.png'); /* Adjust the path to your image
+}
