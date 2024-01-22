@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki index - Game Wiki</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script type="text/javascript">
+        function toggleDropdown(dropdown) {
+            var dropdownContent = dropdown.querySelector('.dropdown-content');
+            if (!dropdown.classList.contains('dropdown-opened')) {
+                dropdownContent.style.display = 'block';
+                dropdown.classList.add('dropdown-opened'); // Add a class to handle styling
+            } else {
+                dropdownContent.style.display = 'none';
+                dropdown.classList.remove('dropdown-opened'); // Remove the class to reset styling
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a class="active" href="/wiki-page">Deep Labyrinth Wiki</a></li>
+        <li><a href="/second-page">Contact</a></li>
+    </ul>
+
+    <div class="spacer"></div><div class="spacer"></div><div class="spacer"></div>
+    
+    <div class="container">
+        <div></div>
+        <div class="cbutton">
+            <a href="/chapter1weapons"><img src="/images/chapter1.png"></a>
+        </div>
+        <div class="cbutton">
+            <a href="/chapter2weapons"><img src="/images/chapter2.png"></a>
+        </div>
+        <div></div>
+    </div>
+
+
+    <div class="stuff">
+        <div class="spacer"></div>
+        <div class="list-container">
+            <ul class="list" style="background-color: rgba(0, 0, 0, 1.0);">
+                
+                <%- include('DLnav') %>
+
+                <a href="/chapter2weapons" style="text-decoration:none" >
+                    <div class="image-list-item">World</div>
+                </a>
+
+            </ul>
+            
+        </div>
+    </div>
+
+</body>
+</html>
