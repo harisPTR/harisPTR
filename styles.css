@@ -23,9 +23,9 @@ li a:hover {
 }
 
 .spacer {
-    height: 20px; /* Adjust the height as needed */
-    background-color: transparent; /* You can add a background color if desired */
-    border: none; /* Remove any borders */
+    height: 20px;
+    background-color: transparent;
+    border: none;
 }
 
 .grid-container {
@@ -44,64 +44,62 @@ li a:hover {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('texture.png'); /* Adjust the path to your image */
+    background-image: url('texture.png');
 }
 
 .stuff {
     background-color: rgba(0, 0, 0, 0.7);
     height: auto;
-    margin-left: 5%; /* Adjust as needed */
-    margin-right: 5%; /* Adjust as needed */
+    margin-left: 5%;
+    margin-right: 5%;
     padding-bottom: 1%;
     padding-right:1%;
 }
 .container {
     display: grid;
-    grid-template-columns: 70% 10% 10% auto; /* Define column widths */
-    grid-gap: 20px; /* Add a gap between elements */
+    grid-template-columns: 70% 10% 10% auto;
+    grid-gap: 20px;
 }
 
-.cbutton {/* chapter buttons  */
-    position: relative; /* Needed for absolute positioning */
-    overflow: hidden; /* Hide overflowing content */
+.cbutton {
+    position: relative;
+    overflow: hidden;
 }
 
 .cbutton img{
-    width: 100%; /* Scale the image to 100% of its parent's width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any inline spacing */
-    margin: 0; /* Reset margins */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
 }
 
 .list-container {
-    display: flex; /* Use flexbox to place lists side by side */
+    display: flex;
     display: grid;
-    grid-template-columns: 30% 40% 30%; /* Define column widths */
+    grid-template-columns: 30% 40% 30%;
 }
 
 .list {
-    margin: 0; /* Remove default list margin */
-    padding: 1%; /* Remove default list padding */
-    list-style: none; /* Remove list bullets */
-    margin-right: 5%; /* Add spacing between lists (adjust as needed) */
+    margin: 0;
+    padding: 1%;
+    list-style: none;
+    margin-right: 5%;
     margin-left: 20px;
 }
 
 .image-list-item {
-    background-image: url('/images/texture2.png'); /* Replace 'your-image.jpg' with your image file path */ 
-    background-repeat: repeat; /* Repeat the image both horizontally and vertically */
-    background-size: 10% auto; /* Scale the image to 100% height while maintaining aspect ratio */
-    padding: 10px; /* Add padding to the list item as needed */
+    background-image: url('texture2.png');
+    background-repeat: repeat;
+    background-size: 10% auto;
+    padding: 10px;
     margin-bottom: 1%;
     color: white;
 }
 
-/* Add styles for the dropdown container */
 .dropdown {
     position: relative;
 }
 
-/* Style the dropdown trigger */
 .dropdown .dropdown-trigger {
     cursor: pointer;
     user-select: none;
@@ -109,7 +107,6 @@ body {
     color: white;
 }
 
-/* Style the dropdown content */
 .dropdown .dropdown-content {
     position: relative;
     top: 100%;
@@ -117,39 +114,34 @@ body {
     display: none;
     background-color: rgba(0, 0, 0, 1.0);
     list-style: none;
-    padding: 10px; /* Add padding to the list item as needed */
+    padding: 10px;
     margin-left: 20px;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
-/* Show the dropdown content when clicking on the trigger */
 .dropdown.active .dropdown-content {
     display: block;
 }
 
-/* Style the dropdown items */
 .dropdown .dropdown-content .image-list-item {
     padding: 10px;
     color: white;
 }
 
-/* Add hover effect for dropdown items */
 .dropdown .dropdown-content .image-list-item:hover {
     background-color: #111;
 }
 
-/* Define the background texture for the opened dropdown */
 .image-list-item.dropdown-opened {
     background-image: none;
-    background-color: #2CB070; /* Replace with your texture image path */
-    background-repeat: repeat; /* Adjust as needed */
-    /* Additional background properties as needed */
+    background-color: #2CB070;
+    background-repeat: repeat;
 }
 
 .image {
-    width: 200px; /* Set container width */
-    height: 200px; /* Set container height */
+    width: 200px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -167,41 +159,41 @@ body {
 
 .item-container {
     background-color: #6f967a;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    width: 92%; /* Set container width *//
+    display: flex;
+    align-items: center;
+    width: 92%;
     height: auto;
-    padding: 10px; /* Padding for spacing */
+    padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 5px;
 }
 
 .item-container img {
-    width: 150px; /* Set image width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Add spacing between image and text */
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
     margin-left: 15px;
 }
 .item-container p {
-    margin: 0; /* Remove default paragraph margin */
-    font-size: 16px; /* Adjust text size */
+    margin: 0;
+    font-size: 16px;
     overflow: hidden;
     white-space: nowrap;
 }
 
 .text-section {
-    flex: 1; /* Allow the text section to take remaining space */
+    flex: 1;
 }
 .text-section p {
-    margin: 0 0 10px 0; /* Adjust text paragraph margins */
-    font-size: 16px; /* Adjust text size */
+    margin: 0 0 10px 0;
+    font-size: 16px;
     margin-left: 10px;
 }
 
 .video-container {
-    pointer-events: none; /* Disable pointer events on the video */
-    width: 200px; /* Set video container width */
-    height: 200px; /* Set video container height */
-    overflow: hidden; /* Hide overflow */
+    pointer-events: none;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
 }
