@@ -5,11 +5,9 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
@@ -17,16 +15,193 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover {
     background-color: #111;
 }
-
 .active {
     background-color: #8015d1;
 }
 
+.spacer {
+    height: 20px; /* Adjust the height as needed */
+    background-color: transparent; /* You can add a background color if desired */
+    border: none; /* Remove any borders */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  text-align: center;
+  font-size: 30px;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-image: url('texture.png'); /* Adjust the path to your image */
+    background-image: url('/images/texture.png'); /* Adjust the path to your image */
+}
+
+.stuff {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    margin-left: 5%; /* Adjust as needed */
+    margin-right: 5%; /* Adjust as needed */
+    padding-bottom: 1%;
+    padding-right:1%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 70% 10% 10% auto; /* Define column widths */
+    grid-gap: 20px; /* Add a gap between elements */
+}
+
+.cbutton {/* chapter buttons  */
+    position: relative; /* Needed for absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.cbutton img{
+    width: 100%; /* Scale the image to 100% of its parent's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
+    margin: 0; /* Reset margins */
+}
+
+.list-container {
+    display: flex; /* Use flexbox to place lists side by side */
+    display: grid;
+    grid-template-columns: 30% 40% 30%; /* Define column widths */
+}
+
+.list {
+    margin: 0; /* Remove default list margin */
+    padding: 1%; /* Remove default list padding */
+    list-style: none; /* Remove list bullets */
+    margin-right: 5%; /* Add spacing between lists (adjust as needed) */
+    margin-left: 20px;
+}
+
+.image-list-item {
+    background-image: url('/images/texture2.png'); /* Replace 'your-image.jpg' with your image file path */ 
+    background-repeat: repeat; /* Repeat the image both horizontally and vertically */
+    background-size: 10% auto; /* Scale the image to 100% height while maintaining aspect ratio */
+    padding: 10px; /* Add padding to the list item as needed */
+    margin-bottom: 1%;
+    color: white;
+}
+
+/* Add styles for the dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Style the dropdown trigger */
+.dropdown .dropdown-trigger {
+    cursor: pointer;
+    user-select: none;
+    padding: 0px;
+    color: white;
+}
+
+/* Style the dropdown content */
+.dropdown .dropdown-content {
+    position: relative;
+    top: 100%;
+    left: 5%;
+    display: none;
+    background-color: rgba(0, 0, 0, 1.0);
+    list-style: none;
+    padding: 10px; /* Add padding to the list item as needed */
+    margin-left: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* Show the dropdown content when clicking on the trigger */
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown items */
+.dropdown .dropdown-content .image-list-item {
+    padding: 10px;
+    color: white;
+}
+
+/* Add hover effect for dropdown items */
+.dropdown .dropdown-content .image-list-item:hover {
+    background-color: #111;
+}
+
+/* Define the background texture for the opened dropdown */
+.image-list-item.dropdown-opened {
+    background-image: none;
+    background-color: #2CB070; /* Replace with your texture image path */
+    background-repeat: repeat; /* Adjust as needed */
+    /* Additional background properties as needed */
+}
+
+.image {
+    width: 200px; /* Set container width */
+    height: 200px; /* Set container height */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.item-container {
+    background-color: #6f967a;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    width: 92%; /* Set container width *//
+    height: auto;
+    padding: 10px; /* Padding for spacing */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.item-container img {
+    width: 150px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Add spacing between image and text */
+    margin-left: 15px;
+}
+.item-container p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 16px; /* Adjust text size */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-section {
+    flex: 1; /* Allow the text section to take remaining space */
+}
+.text-section p {
+    margin: 0 0 10px 0; /* Adjust text paragraph margins */
+    font-size: 16px; /* Adjust text size */
+    margin-left: 10px;
+}
+
+.video-container {
+    pointer-events: none; /* Disable pointer events on the video */
+    width: 200px; /* Set video container width */
+    height: 200px; /* Set video container height */
+    overflow: hidden; /* Hide overflow */
 }
