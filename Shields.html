@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shields - Game Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript">
+        function toggleDropdown(dropdown) {
+            var dropdownContent = dropdown.querySelector('.dropdown-content');
+            if (!dropdown.classList.contains('dropdown-opened')) {
+                dropdownContent.style.display = 'block';
+                dropdown.classList.add('dropdown-opened'); // Add a class to handle styling
+            } else {
+                dropdownContent.style.display = 'none';
+                dropdown.classList.remove('dropdown-opened'); // Remove the class to reset styling
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="harisPTR/">Home</a></li>
+        <li><a class="active" href="harisPTR/wiki-page">Deep Labyrinth Wiki</a></li>
+        <li><a href="harisPTR/second-page">Contact</a></li>
+    </ul>
+
+    <div class="spacer"></div><div class="spacer"></div><div class="spacer"></div>
+
+    <div class="container">
+        <div></div>
+    </div>
+
+
+    <div class="stuff">
+        <div class="spacer"></div>
+        <div class="list-container">
+            <ul class="list" style="background-color: rgba(0, 0, 0, 0.0);">
+                <a href="/harisPTR//chapter1weapons.html" style="text-decoration:none" >
+                    <div class="image-list-item">
+                        <label class="unselectable">Player Guide</label>
+                    </div>
+                </a>
+                <a href="/harisPTR//Kirie" style="text-decoration:none" >
+                    <div class="image-list-item">
+                        <label class="unselectable">Kirie</label>
+                    </div>
+                </a>
+                <div class="image-list-item dropdown" onclick="toggleDropdown(this)">
+                    <span class="dropdown-trigger">Equipment</span>
+                    <ul class="dropdown-content">
+                        <a href="/harisPTR//Swords.html" style="text-decoration:none" >
+                            <div class="image-list-item">Swords</div>
+                        </a>
+                        <a href="/harisPTR//Shields.html" style="text-decoration:none" >
+                            <div class="image-list-item">Shields</div>
+                        </a>
+                        <a href="/harisPTR//Armor.html" style="text-decoration:none" >
+                            <div class="image-list-item">Armor</div>
+                        </a>
+                        <a href="/harisPTR//consumables.html" style="text-decoration:none" >
+                            <div class="image-list-item">Consumables</div>
+                        </a>
+                        <a href="/harisPTR//keyItems.html" style="text-decoration:none" >
+                            <div class="image-list-item">Key Items</div>
+                        </a>
+                    </ul>
+                </div>
+                <div class="image-list-item dropdown" onclick="toggleDropdown(this)">
+                    <span class="dropdown-trigger">Enemies</span>
+                    <ul class="dropdown-content">
+                        <a href="/harisPTR//chapter2weapons.html" style="text-decoration:none">
+                            <div class="image-list-item">Bosses</div>
+                        </a>
+                        <a href="/harisPTR//chapter2weapons.html" style="text-decoration:none">
+                            <div class="image-list-item">Rare Monsters</div>
+                        </a>
+                    </ul>
+                </div>
+                <a href="/harisPTR//chapter2weapons.html" style="text-decoration:none" >
+                    <div class="image-list-item">Story</div>
+                </a>
+            </ul>
+                
+            <ul class="list" style="background-color: rgba(0, 0, 0, 0.0);">
+
+                <div class="image-list-item">
+                    <label class="unselectable">Bronze Shield</label>
+                </div>
+                <div class="item-container">
+                    <!-- <img class="image" src="/gif/BShield.gif" alt="1"> -->
+                    <video class="video-container" src="harisPTR/gif/BShield.mp4" autoplay loop muted controls="false"></video>
+                    <div class="text-section">
+                        <p>Made of bronze. Very low defence.</p>
+                        <p>Effect: Defence +22%</p>
+                        <p>Location: Terra: First Steppe</p>
+                        <p>Full Set Defence: +26%</p>
+                        <p>Farmable: No</p>
+                        <p>Chapter: Both</p>
+                    </div>
+                </div>
+
+                <div class="image-list-item">
+                    <label class="unselectable">Dragon Shield</label>
+                </div>
+                <div class="item-container">
+                    <!-- <img class="image" src="/gif/DShield.gif" alt="1"> -->
+                    <video class="video-container" src="DShield.mp4" autoplay loop muted controls="false"></video>
+                    <div class="text-section">
+                        <p>Chapter: Both</p>
+                        <p>Effect: Defence +90%, SlpResistance +70%</p>
+                        <p>         , PsnResistance +70%</p>
+                        <p>         , ParaResistance +70%</p>
+                        <p>Location: </p>
+                        <p>Farmable: No</p>
+                        <p>Full Set Bonus: </p>
+                    </div>
+                </div>
+
+                <div class="image-list-item">
+                    <label class="unselectable">Cursed Shield</label>
+                </div>
+                <div class="item-container">
+                    <!-- <img class="image" src="/gif/CShield.gif" alt="1"> -->
+                    <video class="video-container" src="CShield.mp4" autoplay loop muted controls="false"></video>
+                    <div class="text-section">
+                        <p>Chapter: Both</p>
+                        <p>Effect: Defence +64%, Enc Rate +200%, Cursed</p>
+                        <p>Location: </p>
+                        <p>Farmable: No</p>
+                        <p>Full Set Bonus: </p>
+                    </div>
+                </div>
+
+                <div class="image-list-item">
+                    <label class="unselectable">Falcon Shield</label>
+                </div>
+                <div class="item-container">
+                    <!-- <img class="image" src="/gif/FShield.gif" alt="1"> -->
+                    <video class="video-container" src="FShield.mp4" autoplay loop muted controls="false"></video>
+                    <div class="text-section">
+                        <p>Chapter: Both</p>
+                        <p>Effect: Defence +95%, Evade Rate +20%</p>
+                        <p>Description: Light, with a high evasion rate.</p>
+                        <p>Location: </p>
+                        <p>Farmable: No</p>
+                        <p>Full Set Bonus: </p>
+                    </div>
+                </div>
+
+                <div class="image-list-item">
+                    <label class="unselectable">BlueStone Shield</label>
+                </div>
+                <div class="item-container">
+                    <!-- <img class="image" src="/gif/BSShield.gif" alt="1"> -->
+                    <video class="video-container" src="BSShield.mp4" autoplay loop muted controls="false"></video>
+                    <div class="text-section">
+                        <p>Chapter: Chapter 1</p>
+                        <p>Effect: Defence +96%, Spell Resist -20%</p>
+                        <p>Location: Droped from small silver slime in</p>
+                        <p> B1F: Room of Snatching(mocho's room)</p>
+                        <p>black wisp in Terra/Woods: Tartarus Woods</p>
+                        <p>Farmable: YES (Rare)</p>
+                        <p>Full Set Bonus: Spell Resist +96%</p>
+                    </div>
+                </div>
+
+
+                <div class="image-list-item">
+                    <label class="unselectable">BlueStone Shield</label>
+                </div>
+                <div class="item-container">
+                    <video class="video-container" src="MaShield.mp4" autoplay loop muted controls="false"></video>
+                    <div class="text-section">
+                        <p>Chapter: Chapter 1</p>
+                        <p>Effect: Defence +96%, Spell Resist -20%</p>
+                        <p>Location: Droped from small silver slime in</p>
+                        <p> B1F: Room of Snatching(mocho's room)</p>
+                        <p>black wisp in Terra/Woods: Tartarus Woods</p>
+                        <p>Farmable: YES (Rare)</p>
+                        <p>Full Set Bonus: Spell Resist +96%</p>
+                    </div>
+                </div>
+
+                
+
+            </ul>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
