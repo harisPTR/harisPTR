@@ -1,91 +1,4 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-li {
-    float: left;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
-}
-.active {
-    background-color: #8015d1;
-}
-
-.spacer {
-    height: 20px;
-    background-color: transparent;
-    border: none;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  background-color: transparent;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: transparent;
-  text-align: center;
-  font-size: 30px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('/harisPTR/images/texture.png');
-}
-
-.stuff {
-    background-color: rgba(0, 0, 0, 0.7);
-    height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 1%;
-    padding-right:1%;
-}
-.container {
-    display: grid;
-    grid-template-columns: 70% 10% 10% auto;
-    grid-gap: 20px;
-}
-
-.cbutton {
-    position: relative;
-    overflow: hidden;
-}
-
-.cbutton img{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-}
-
-.list-container {
-    display: flex;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-}
-
-.list {
-    margin: 0;
-    padding: 1%;
-    list-style: none;
-    margin-right: 5%;
-    margin-left: 20px;
-}
+/* Default styles */
 
 .image-list-item {
     background-image: url('/harisPTR/images/texture2.png');
@@ -196,4 +109,18 @@ body {
     width: 200px;
     height: 200px;
     overflow: hidden;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .item-container {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .video-container {
+        width: 100%;
+        height: auto;
+    }
+    /* Add more responsive styles as needed */
 }
