@@ -3,98 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Layout</title>
+    <title>Swords - Game Wiki</title>
+    <link rel="stylesheet" href="/harisPTR/css/styles.css">
+
+    <script type="text/javascript">
+        function toggleDropdown(dropdown) {
+            var dropdownContent = dropdown.querySelector('.dropdown-content');
+            if (!dropdown.classList.contains('dropdown-opened')) {
+                dropdownContent.style.display = 'block';
+                dropdown.classList.add('dropdown-opened'); // Add a class to handle styling
+            } else {
+                dropdownContent.style.display = 'none';
+                dropdown.classList.remove('dropdown-opened'); // Remove the class to reset styling
+            }
+        }
+    </script>
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-image: url('/harisPTR/images/texture.png');
-        }
-        .spacer {
-            width: 100%;
-            height: 20px; /* Adjust the height as needed */
-            background-color: transparent;
-            border: none;
-        }
-        .menu-bar {
-            width: 80%; /* Adjust the width as needed */
-            background-color: #333;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            display: flex;
-            justify-content: space-around;
-        }
-        li {
-            float: left;
-        }
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        li a:hover {
-            background-color: #111;
-        }
-        .active {
-            background-color: #8015d1;
-        }
-        .content {
-            width: 80%; /* Adjust the width as needed */
-            flex-grow: 1;
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-            display: flex;
-            padding: 20px; /* Adjust the padding as needed */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .content-section {
-            flex: 1;
-            margin: 0 10px; /* Adjust the margin as needed */
-        }
-        .content-section.menu {
-            /* Optional styling for the menu section */
-        }
-        .content-section.main {
-            /* Optional styling for the main content section */
-        }
-        .content-section.spacer {
-            /* Optional styling for the spacer section */
+        /* Example of media query for responsiveness */
+        @media screen and (max-width: 768px) {
+            .menu-bar ul {
+                flex-direction: column;
+            }
+            .menu-bar li {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="spacer"></div>
-    <div class="menu-bar">
+    <header>
+        <h1>Shields - Game Wiki</h1>
+        <!-- Additional header content or navigation elements can go here -->
+    </header>
+
+    <nav class="menu-bar">
         <ul>
             <li><a href="/harisPTR/index.html">Home</a></li>
             <li><a class="active" href="/harisPTR/wiki-page.html">Deep Labyrinth Wiki</a></li>
             <li><a href="/harisPTR/second-page.html">Contact</a></li>
         </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Content goes here -->
     </div>
-    <div class="spacer"></div>
-    <div class="content">
-        <div class="content-section menu">
-            <!-- Menu content goes here -->
-        </div>
-        <div class="content-section main">
-            <!-- Main content to display goes here -->
-            <h1>Welcome to the Content Section</h1>
-            <p>This is where the main content will be displayed.</p>
-        </div>
-        <div class="content-section spacer">
-            <!-- Spacer content goes here -->
+
+    <div class="stuff">
+        <div class="spacer"></div>
+        <div class="list-container">
+            <ul class="list">
+                <!-- Shields list -->
+            </ul>
         </div>
     </div>
-    <div class="spacer"></div>
+
 </body>
 </html>
