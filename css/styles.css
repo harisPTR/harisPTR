@@ -1,4 +1,9 @@
 /* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/harisPTR/images/texture.png');
+}
+
 
 .image-list-item {
     background-image: url('/harisPTR/images/texture2.png');
